@@ -1,0 +1,359 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F2E2CE;
+  padding: 7vh 10vw 7vh 10vw;
+  cursor: none;
+}
+
+body, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+article {
+  height: 100vh;
+}
+
+/* text in heroPage */
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 29vmin;
+}
+
+/* text in heroPage */
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 12vw;
+}
+
+/* text in heroPage */
+h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3vmin;
+  color: #F2E2CE;
+}
+
+/* text in heroPage */
+h4 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 5vmin;
+  line-height: 2em;
+}
+
+h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2vmin;
+}
+
+h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-size: 1.8vmin;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a, a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: black;
+  color: #F2E2CE;
+  padding: 2vmin 7vmin;
+  border-radius: 5%;
+  font-size: 3vmin;
+  border: 3px solid black;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #F2E2CE;
+  color: black;
+}
+
+/* .mainContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+} */
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.heroPage {
+  position: relative;
+}
+
+.backgroundWord {
+  display: none;
+  padding: 0vmin 5vmin 0vmin 5vmin;
+  background-color: black;
+  color: #F2E2CE;
+}
+
+.heropic {
+  display: none;
+  position: absolute;
+  bottom: 18vh;
+  right: 0;
+  height: 90%;
+}
+
+#myname {
+  margin-top: 45vh;
+  margin-left: -1vmin;
+  /* position: absolute;
+  bottom: 22vh;
+  left: -1vmin; */
+  -webkit-text-stroke: 1px #F2E2CE;
+}
+
+/* .nyu{
+  position: absolute;
+  bottom: 20vh;
+} */
+
+
+
+.language {
+  z-index: 100;
+  position: fixed;
+  right: 10vw;
+  top: 7vh;
+  display: flex;
+  align-items: center;
+}
+
+.introduction {
+  padding: 0 2vw 0 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  left: 10vw;
+  top: 7vh;
+  width: 22vmin;
+  background-color: black;
+  text-align: center;
+}
+
+.icon-margin {
+  margin-bottom: 1.5vmin;
+}
+
+.contact {
+  z-index: 100;
+  position: fixed;
+  right: 10vw;
+  bottom: 7vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.backtotop{
+  z-index: 100;
+  position: fixed;
+  left: 10vw;
+  bottom: 9vh;
+}
+
+.category {
+  pointer-events: none;
+  color: transparent;
+  z-index: 3;
+  text-align: center;
+  font-size: 16vmin;
+  -webkit-text-stroke: 2px black;
+}
+
+.project {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* line-height: 27em; */
+}
+
+.infoTag {
+  line-height: 1.5em;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 80vh;
+}
+
+.workImg {
+  height: 100%;
+  z-index: 2;
+}
+
+.urlPosition {
+  position: absolute;
+  height: 50%;
+}
+
+.title {
+  font-style: italic;
+  margin-top: -20vmin;
+}
+
+#works {}
+
+.workNumber {
+  position: fixed;
+  left: 10vw;
+  bottom: 7vh;
+  font-size: 3vmin;
+}
+
+.moreclassBtn{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+
+@media screen and (max-width: 480px) {
+  body {
+    /* overflow: hidden; */
+    padding: 7vh 10vw 7vh 10vw;
+  }
+
+  article {
+    height: 100vh;
+  }
+
+  h3 {
+    font-size: 4vmin;
+  }
+
+  button h5 {
+    font-size: 4vmin;
+  }
+
+  .heroPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 80vw;
+  }
+
+  #myname, .hello, .nyu {
+    display: none;
+  }
+
+  .heropic {
+    position: static;
+    display: block;
+    bottom: 10vh;
+    left: -80%;
+    z-index: 0;
+    height: 45%;
+  }
+
+  .backgroundWord {
+    display: block;
+    font-size: 15vmin;
+    margin-bottom: 3vh;
+  }
+
+  .name {
+    opacity: 1;
+    width: 30vmin;
+  }
+
+  .workImg {
+    height: auto;
+    width: 80%;
+    z-index: 2;
+    margin-right: 0;
+    margin-left: 8vmin;
+    margin-top: 5vmin;
+    /* display: none; */
+  }
+
+  .introduction {
+    padding: 0 0 0 5vw;
+  }
+
+  .introduction h4 {
+    font-size: 6vmin;
+  }
+
+
+
+  #works article {
+    padding-bottom: 30px;
+    height: 40vh;
+    position: relative;
+  }
+
+  .project {
+    display: block;
+  }
+
+  .urlPosition {
+    text-align: center;
+  }
+
+  .category {
+    pointer-events: inherit;
+    font-size: 8vmin;
+    cursor: pointer;
+  }
+
+  .title {
+    font-style: italic;
+    margin-top: -20vmin;
+  }
+
+  .infoTag {
+    position: static;
+    margin-top: 25vh;
+    left: 0;
+    top: 0;
+    transform: none;
+  }
+
+  .infoTag h6 {
+    font-size: 3vmin;
+    text-align: center;
+  }
+
+  .contact {
+    right: 5vmin;
+    bottom: 2vh;
+  }
+
+  .icon-margin {
+    padding-bottom: 5vmin;
+  }
+
+  .footer {
+    margin-top: 20vh;
+  }
+}
